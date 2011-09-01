@@ -1,0 +1,12 @@
+This repository contains an example of import script for Picalag
+citylife.rb scrapes events from http://www.citylife.co.uk website
+
+To use it:
+ruby citylife.rb [opts]
+where [opts] can be empty (events for the current day will be scraped) or can be a date of format "YYYY MM dd".
+Example: 
+ruby citylife.rb 2011 08 31
+will scrape city life events for the 31st of August 2011.
+
+This script requires Nokogiri to run (http://nokogiri.org/)
+This script creates a cache of downloaded webpages. Caches older than the current date are automatically deleted.
